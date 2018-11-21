@@ -10,19 +10,24 @@ namespace Epam.StudentPractice.Task2.CheckSimplicity
     {
         static void Main(string[] args)
         {
-            Console.Write("N = ");
-            int N = int.Parse(Console.ReadLine());
-            Console.WriteLine(IsSimple(N));
+            int n;
+            Console.WriteLine("This app will check, if number is simple.");
+            do
+            {
+                Console.Write("Enter the number to check it! (positive number)");
+                int.TryParse(Console.ReadLine(), out n);
+            }
+            while (n < 1);
+          
+            Console.WriteLine("The number is simple: {0}", IsSimple(n));
         }
-        public static bool IsSimple(int N)
+
+        public static bool IsSimple(int n)
         {
-            int cnt = 0;
-            for (int i = 2; i <= N / 2; i++)
-                if (N % i == 0)
-                    cnt++;
-            if (cnt == 0)
-                return true;
-            return false;
+            for (int i = 2; i <= Math.Sqrt(n); i++)
+                if (n % i == 0)
+                    return false;
+            return true;
         }
     }
 }

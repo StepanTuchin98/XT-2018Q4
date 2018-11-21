@@ -10,27 +10,36 @@ namespace Epam.StudentPractice.Task3.DrawSquare
     {
         static void Main(string[] args)
         {
-            Console.Write("N = ");
-            int N = int.Parse(Console.ReadLine());
-            if (N % 2 != 0)
-            ShowStarsCube(N);
-            else
-                Console.WriteLine("Even number");
-        }
-        public static void ShowStarsCube(int N)
-        {
-            for (int i = 1; i <= N; i++)
-            {
+            int n;
+            Console.WriteLine("This app will show you a square of the stars.");
 
-                for (int j = 1; j <= N; j++)
-                    if (!(i == N / 2 + 1 && j == N / 2 + 1))
+            do
+            {
+                Console.Write("Enter positive not even number  (number of lines)");
+                int.TryParse(Console.ReadLine(), out n);
+            }
+            while (n % 2 != 0 && n < 1);
+
+            ShowStarsCube(n);       
+        }
+        public static void ShowStarsCube(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    if (!(i == n / 2 + 1 && j == n / 2 + 1))
+                    {
                         Console.Write("*");
+                    }
                     else
+                    {
                         Console.Write(" ");
+                    }
+                    
+                }
                 Console.WriteLine();
             }
-
-
         }
 
     }
