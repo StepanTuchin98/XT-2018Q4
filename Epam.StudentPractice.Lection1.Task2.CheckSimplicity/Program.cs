@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Epam.StudentPractice.Task2.CheckSimplicity
+namespace Epam.StudentPractice.Lection1.Task2.CheckSimplicity
 {
     class Program
     {
@@ -18,7 +18,7 @@ namespace Epam.StudentPractice.Task2.CheckSimplicity
                 int.TryParse(Console.ReadLine(), out n);
             }
             while (n < 1);
-          
+
             Console.WriteLine("The number is simple: {0}", IsSimple(n));
         }
 

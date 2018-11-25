@@ -3,11 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Task1.Sequence", "Epam.StudentPractice.Task1.Sequence\Epam.StudentPractice.Task1.Sequence.csproj", "{07038713-4977-49EF-BD6D-B3CF08F01D70}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task1.Rectangle", "Epam.StudentPractice.Task1_1.Rectangle\Epam.StudentPractice.Lection2.Task1.Rectangle.csproj", "{FDEA4678-CF01-4E09-8EE2-C68E58A8ACD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Task2.CheckSimplicity", "Epam.StudentPractice.Task2.CheckSimplicity\Epam.StudentPractice.Task2.CheckSimplicity.csproj", "{AA46B2D3-F6B3-4060-94CC-8968C79A0868}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task2.Triangle", "Epam.StudentPractice.Lection2.Task2.Triangle\Epam.StudentPractice.Lection2.Task2.Triangle.csproj", "{477304CB-FE2E-4A4D-8D69-EB68445FBA89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Task3.DrawSquare", "Epam.StudentPractice.Task3.DrawSquare\Epam.StudentPractice.Task3.DrawSquare.csproj", "{673304DB-7A00-4194-A8DB-59C1E4793FB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task3.AnotherTriangle", "Epam.StudentPractice.Lection2.Task3.AnotherTriangle\Epam.StudentPractice.Lection2.Task3.AnotherTriangle.csproj", "{ECD08DEA-E8A4-465A-A608-865C04C1A116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task4.X-mas_Tree", "Epam.StudentPractice.Lection2.Task4.X-mas_Tree\Epam.StudentPractice.Lection2.Task4.X-mas_Tree.csproj", "{FCBE2D5E-8AB5-4F73-A42B-5DCD2DE2C062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task5.Sum_of_Digits", "Epam.StudentPractice.Lection2.Task5.Sum_of_Digits\Epam.StudentPractice.Lection2.Task5.Sum_of_Digits.csproj", "{53EE93DC-C983-4EDE-9E75-14E8F793BFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task6.Font_Adjustment", "Epam.StudentPractice.Lection2.Task6.Font_Adjustment\Epam.StudentPractice.Lection2.Task6.Font_Adjustment.csproj", "{CF35B3C4-F9EF-41B9-AFEE-47F9FB5F1585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task7.Array_Processing", "Epam.StudentPractice.Lection2.Task7.Array_Processing\Epam.StudentPractice.Lection2.Task7.Array_Processing.csproj", "{92531E72-CF69-4654-A507-51221AE1694D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task8.No_Positive", "Epam.StudentPractice.Lection2.Task8.No_Positive\Epam.StudentPractice.Lection2.Task8.No_Positive.csproj", "{3BF83792-3110-4D21-AE26-FC70FDD9678A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task9.Non-Negative_Sum", "Epam.StudentPractice.Lection2.Task9.Non-Negative_Sum\Epam.StudentPractice.Lection2.Task9.Non-Negative_Sum.csproj", "{ED1A9DA2-5FD6-4CD9-8FA5-C682F4870AFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection2.Task10.2D_Array", "Epam.StudentPractice.Lection2.Task10.2D_Array\Epam.StudentPractice.Lection2.Task10.2D_Array.csproj", "{2F54EF34-ED53-4365-993C-CC8A001288A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lection1", "Lection1", "{B3798485-89F0-4468-95AF-643982A12BF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lection2", "Lection2", "{A1662728-6BCD-425A-A21F-20EDDE7594E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection1.Task1.Sequence", "Epam.StudentPractice.Lection1.Task1.Sequence\Epam.StudentPractice.Lection1.Task1.Sequence.csproj", "{2F418F87-8B0A-4D38-A0A9-4003942FB87F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection1.Task2.CheckSimplicity", "Epam.StudentPractice.Lection1.Task2.CheckSimplicity\Epam.StudentPractice.Lection1.Task2.CheckSimplicity.csproj", "{FE4931B6-8B8E-4FD6-AC0F-5C2B69F09AB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epam.StudentPractice.Lection1.Task3.DrawSquare", "Epam.StudentPractice.Lection1.Task3.DrawSquare\Epam.StudentPractice.Lection1.Task3.DrawSquare.csproj", "{9F13C511-DCC4-4C1E-82EE-7281E73B0A55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +39,76 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{07038713-4977-49EF-BD6D-B3CF08F01D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07038713-4977-49EF-BD6D-B3CF08F01D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07038713-4977-49EF-BD6D-B3CF08F01D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07038713-4977-49EF-BD6D-B3CF08F01D70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA46B2D3-F6B3-4060-94CC-8968C79A0868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA46B2D3-F6B3-4060-94CC-8968C79A0868}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA46B2D3-F6B3-4060-94CC-8968C79A0868}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA46B2D3-F6B3-4060-94CC-8968C79A0868}.Release|Any CPU.Build.0 = Release|Any CPU
-		{673304DB-7A00-4194-A8DB-59C1E4793FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{673304DB-7A00-4194-A8DB-59C1E4793FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{673304DB-7A00-4194-A8DB-59C1E4793FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{673304DB-7A00-4194-A8DB-59C1E4793FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEA4678-CF01-4E09-8EE2-C68E58A8ACD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEA4678-CF01-4E09-8EE2-C68E58A8ACD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEA4678-CF01-4E09-8EE2-C68E58A8ACD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEA4678-CF01-4E09-8EE2-C68E58A8ACD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477304CB-FE2E-4A4D-8D69-EB68445FBA89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477304CB-FE2E-4A4D-8D69-EB68445FBA89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477304CB-FE2E-4A4D-8D69-EB68445FBA89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477304CB-FE2E-4A4D-8D69-EB68445FBA89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD08DEA-E8A4-465A-A608-865C04C1A116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD08DEA-E8A4-465A-A608-865C04C1A116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD08DEA-E8A4-465A-A608-865C04C1A116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD08DEA-E8A4-465A-A608-865C04C1A116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCBE2D5E-8AB5-4F73-A42B-5DCD2DE2C062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBE2D5E-8AB5-4F73-A42B-5DCD2DE2C062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBE2D5E-8AB5-4F73-A42B-5DCD2DE2C062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBE2D5E-8AB5-4F73-A42B-5DCD2DE2C062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53EE93DC-C983-4EDE-9E75-14E8F793BFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EE93DC-C983-4EDE-9E75-14E8F793BFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EE93DC-C983-4EDE-9E75-14E8F793BFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EE93DC-C983-4EDE-9E75-14E8F793BFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF35B3C4-F9EF-41B9-AFEE-47F9FB5F1585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF35B3C4-F9EF-41B9-AFEE-47F9FB5F1585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF35B3C4-F9EF-41B9-AFEE-47F9FB5F1585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF35B3C4-F9EF-41B9-AFEE-47F9FB5F1585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92531E72-CF69-4654-A507-51221AE1694D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92531E72-CF69-4654-A507-51221AE1694D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92531E72-CF69-4654-A507-51221AE1694D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92531E72-CF69-4654-A507-51221AE1694D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BF83792-3110-4D21-AE26-FC70FDD9678A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BF83792-3110-4D21-AE26-FC70FDD9678A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BF83792-3110-4D21-AE26-FC70FDD9678A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BF83792-3110-4D21-AE26-FC70FDD9678A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1A9DA2-5FD6-4CD9-8FA5-C682F4870AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1A9DA2-5FD6-4CD9-8FA5-C682F4870AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1A9DA2-5FD6-4CD9-8FA5-C682F4870AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1A9DA2-5FD6-4CD9-8FA5-C682F4870AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F54EF34-ED53-4365-993C-CC8A001288A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F54EF34-ED53-4365-993C-CC8A001288A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F54EF34-ED53-4365-993C-CC8A001288A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F54EF34-ED53-4365-993C-CC8A001288A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F418F87-8B0A-4D38-A0A9-4003942FB87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F418F87-8B0A-4D38-A0A9-4003942FB87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F418F87-8B0A-4D38-A0A9-4003942FB87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F418F87-8B0A-4D38-A0A9-4003942FB87F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4931B6-8B8E-4FD6-AC0F-5C2B69F09AB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4931B6-8B8E-4FD6-AC0F-5C2B69F09AB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4931B6-8B8E-4FD6-AC0F-5C2B69F09AB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4931B6-8B8E-4FD6-AC0F-5C2B69F09AB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F13C511-DCC4-4C1E-82EE-7281E73B0A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F13C511-DCC4-4C1E-82EE-7281E73B0A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F13C511-DCC4-4C1E-82EE-7281E73B0A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F13C511-DCC4-4C1E-82EE-7281E73B0A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDEA4678-CF01-4E09-8EE2-C68E58A8ACD0} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{477304CB-FE2E-4A4D-8D69-EB68445FBA89} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{ECD08DEA-E8A4-465A-A608-865C04C1A116} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{FCBE2D5E-8AB5-4F73-A42B-5DCD2DE2C062} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{53EE93DC-C983-4EDE-9E75-14E8F793BFA8} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{CF35B3C4-F9EF-41B9-AFEE-47F9FB5F1585} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{92531E72-CF69-4654-A507-51221AE1694D} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{3BF83792-3110-4D21-AE26-FC70FDD9678A} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{ED1A9DA2-5FD6-4CD9-8FA5-C682F4870AFD} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{2F54EF34-ED53-4365-993C-CC8A001288A1} = {A1662728-6BCD-425A-A21F-20EDDE7594E7}
+		{2F418F87-8B0A-4D38-A0A9-4003942FB87F} = {B3798485-89F0-4468-95AF-643982A12BF8}
+		{FE4931B6-8B8E-4FD6-AC0F-5C2B69F09AB3} = {B3798485-89F0-4468-95AF-643982A12BF8}
+		{9F13C511-DCC4-4C1E-82EE-7281E73B0A55} = {B3798485-89F0-4468-95AF-643982A12BF8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83EE6BD6-078C-4064-B9BE-3CAEE255BB36}

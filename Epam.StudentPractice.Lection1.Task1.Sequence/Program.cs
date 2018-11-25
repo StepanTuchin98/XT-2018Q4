@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Epam.StudentPractice.Task1.Sequence
+namespace Epam.StudentPractice.Lection1.Task1.Sequence
 {
     class Program
     {
@@ -8,15 +12,15 @@ namespace Epam.StudentPractice.Task1.Sequence
         {
             int n;
             Console.WriteLine("This app will show you a sequence.");
-            
+
             do
             {
                 Console.Write("Enter the number of the digits (positive number)");
                 int.TryParse(Console.ReadLine(), out n);
             }
             while (n < 1);
-             
-             GetSequence(n);
+
+            GetSequence(n);
         }
 
         public static void GetSequence(int n)
@@ -27,13 +31,14 @@ namespace Epam.StudentPractice.Task1.Sequence
                 Console.Write($"{i}, ");
             }
             Console.WriteLine(n);
-            /*
-            List<int> t = new List<int>();
-            for (int i = 1; i <= n; i++)
-                t.Add(i);
+            /* 
+            List<int> t = new List<int>(); 
+            for (int i = 1; i <= n; i++) 
+            t.Add(i); 
 
-            String rs = String.Join(",", t.ToArray());
+            String rs = String.Join(",", t.ToArray()); 
             return rs;*/
         }
     }
+
 }

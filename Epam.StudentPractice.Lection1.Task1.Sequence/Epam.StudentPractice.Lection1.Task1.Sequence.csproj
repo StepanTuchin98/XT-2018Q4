@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{07038713-4977-49EF-BD6D-B3CF08F01D70}</ProjectGuid>
+    <ProjectGuid>{2F418F87-8B0A-4D38-A0A9-4003942FB87F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Epam.StudentPractice.Task1.Sequence</RootNamespace>
-    <AssemblyName>Epam.StudentPractice.Task1.Sequence</AssemblyName>
+    <RootNamespace>Epam.StudentPractice.Lection1.Task1.Sequence</RootNamespace>
+    <AssemblyName>Epam.StudentPractice.Lection1.Task1.Sequence</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

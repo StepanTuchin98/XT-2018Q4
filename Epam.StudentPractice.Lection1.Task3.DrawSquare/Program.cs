@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Epam.StudentPractice.Task3.DrawSquare
+namespace Epam.StudentPractice.Lection1.Task3.DrawSquare
 {
     class Program
     {
@@ -15,12 +15,12 @@ namespace Epam.StudentPractice.Task3.DrawSquare
 
             do
             {
-                Console.Write("Enter positive not even number  (number of lines)");
+                Console.Write("Enter positive not even number (number of lines)");
                 int.TryParse(Console.ReadLine(), out n);
             }
             while (n % 2 != 0 && n < 1);
 
-            ShowStarsCube(n);       
+            ShowStarsCube(n);
         }
         public static void ShowStarsCube(int n)
         {
@@ -36,7 +36,7 @@ namespace Epam.StudentPractice.Task3.DrawSquare
                     {
                         Console.Write(" ");
                     }
-                    
+
                 }
                 Console.WriteLine();
             }

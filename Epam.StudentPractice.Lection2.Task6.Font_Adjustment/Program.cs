@@ -18,10 +18,10 @@ namespace Epam.StudentPractice.Lection2.Task6.Font_Adjustment
             {
                 Console.WriteLine("Enter string or float digit to exit");
                 Console.WriteLine("Options selected: {0} ", types);
-                Console.WriteLine($"Enter\n\t\t" +
-                    $"1:\t{TypesOfFonts.Bold}\n\t\t" +
-                    $"2:\t{TypesOfFonts.Italic}\n\t\t" +
-                    $"3:\t{TypesOfFonts.Underline}\n");
+                Console.WriteLine($"Enter{Environment.NewLine}\t\t" +
+                    $"1:\t{TypesOfFonts.Bold}{Environment.NewLine}\t\t" +
+                    $"2:\t{TypesOfFonts.Italic}{Environment.NewLine}\t\t" +
+                    $"3:\t{TypesOfFonts.Underline}{Environment.NewLine}");
 
 
 
