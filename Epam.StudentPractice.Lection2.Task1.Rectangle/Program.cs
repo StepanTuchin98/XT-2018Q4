@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Epam.StudentPractice.Task1_1.Rectangle
+namespace Epam.StudentPractice.Lection2.Task1.Rectangle
 {
     class Program
     {
@@ -44,6 +44,5 @@ namespace Epam.StudentPractice.Task1_1.Rectangle
         }
         public static int GetArea(int a, int b) => a * b;
     }
-    
-}
 
+}
