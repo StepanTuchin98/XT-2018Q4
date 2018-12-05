@@ -10,17 +10,24 @@ namespace Epam.StudentPractice.Lection1.Task3.DrawSquare
     {
         static void Main(string[] args)
         {
-            int n;
+
             Console.WriteLine("This app will show you a square of the stars.");
-
-            do
+            Console.Write("Enter positive not even number (number of lines)");
+            if (int.TryParse(Console.ReadLine(), out int n))
             {
-                Console.Write("Enter positive not even number (number of lines)");
-                int.TryParse(Console.ReadLine(), out n);
+                if (n % 2 != 0 && n > 0)
+                {
+                    ShowStarsCube(n);
+                }
+                else
+                {
+                    Console.WriteLine("The number must be above zero and odd!");
+                }
             }
-            while (n % 2 != 0 && n < 1);
-
-            ShowStarsCube(n);
+            else
+            {
+                Console.WriteLine("Enter a number next time!");
+            }
         }
         public static void ShowStarsCube(int n)
         {
@@ -28,6 +35,7 @@ namespace Epam.StudentPractice.Lection1.Task3.DrawSquare
             {
                 for (int j = 1; j <= n; j++)
                 {
+                    //Check center of the square
                     if (!(i == n / 2 + 1 && j == n / 2 + 1))
                     {
                         Console.Write("*");

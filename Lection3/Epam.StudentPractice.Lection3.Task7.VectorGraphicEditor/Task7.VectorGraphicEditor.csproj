@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4482421-C5EB-49FF-903B-540AEE57EA53}</ProjectGuid>
+    <ProjectGuid>{249D916A-3C31-43DB-9896-FAB30B29DD8A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Employee</RootNamespace>
-    <AssemblyName>Employee</AssemblyName>
+    <RootNamespace>Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor</RootNamespace>
+    <AssemblyName>Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs" />
+    <Compile Include="Figures\Circle.cs" />
+    <Compile Include="Interfaces\IFigure.cs" />
+    <Compile Include="Figures\Line.cs" />
+    <Compile Include="Figures\Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Figures\Rectangle.cs" />
+    <Compile Include="Figures\Ring.cs" />
+    <Compile Include="Figures\Round.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

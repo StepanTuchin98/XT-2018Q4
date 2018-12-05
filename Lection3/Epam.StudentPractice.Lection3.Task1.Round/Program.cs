@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Round
+namespace Epam.StudentPractice.Lection3.Task1.Round
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -20,10 +20,13 @@ namespace Round
                 Console.WriteLine(e.Message);
             }
             round?.Show();
-            round.Radius = 5;
-            round?.Show();
 
+            if(round != null)
+            {
+                round.Radius += 10;
+                round.Show();
+            }
+            
         }
-     
     }
 }

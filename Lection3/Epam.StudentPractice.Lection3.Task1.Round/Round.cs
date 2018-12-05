@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Round
+namespace Epam.StudentPractice.Lection3.Task1.Round
 {
     public class Round
     {
@@ -15,7 +15,7 @@ namespace Round
         public double Radius
         {
             get => r;
-            set
+             set
             {
                 if (value > 0)
                 {
@@ -38,6 +38,14 @@ namespace Round
             this.Y = y;
         }
 
+        public Round(double radius)
+        {
+            this.Radius = radius;
+            this.X = 0;
+            this.Y = 0;
+        }
+
+
         public Round()
         {
             this.Radius = 1;
@@ -47,11 +55,11 @@ namespace Round
         #endregion ctors
 
         #region methods
-        public double Square => Math.PI * Radius * Radius;
+        public double Square() => Math.PI * Radius * Radius;
 
-        public double Length => 2 * Math.PI * Radius;
+        public double Length() => 2 * Math.PI * Radius;
 
-        public void Show() => Console.WriteLine($"Radius = {Radius}, X = {X}, Y = {Y}, Square = {Square}, Lenght = {Length}");
+        public void Show() => Console.WriteLine($"Radius = {Radius}, X = {X}, Y = {Y}, Square = {Square()}, Lenght = {Length()}");
         public static Round InitRound()
         {
             Round round;

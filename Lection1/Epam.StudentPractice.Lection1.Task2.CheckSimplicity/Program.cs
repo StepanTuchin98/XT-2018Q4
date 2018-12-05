@@ -10,23 +10,39 @@ namespace Epam.StudentPractice.Lection1.Task2.CheckSimplicity
     {
         static void Main(string[] args)
         {
-            int n;
+            bool result;
             Console.WriteLine("This app will check, if number is simple.");
-            do
+            Console.Write("Enter the number to check it! (positive number)");
+            if (int.TryParse(Console.ReadLine(), out int n))
             {
-                Console.Write("Enter the number to check it! (positive number)");
-                int.TryParse(Console.ReadLine(), out n);
+                if (n > 0)
+                {
+                    result = IsSimple(n);
+                    Console.WriteLine($"The number is simple: {result}");
+                }
+                else
+                {
+                    Console.WriteLine("Enter a number above 0 next time!");
+                }
             }
-            while (n < 1);
-
-            Console.WriteLine("The number is simple: {0}", IsSimple(n));
+            else
+            {
+                Console.WriteLine("Enter a number next time!");
+            }
+           
         }
 
         public static bool IsSimple(int n)
         {
+            //All dividers can be search by point of sqrt(number)
             for (int i = 2; i <= Math.Sqrt(n); i++)
+            {
                 if (n % i == 0)
+                {
                     return false;
+                }
+            }
+
             return true;
         }
     }

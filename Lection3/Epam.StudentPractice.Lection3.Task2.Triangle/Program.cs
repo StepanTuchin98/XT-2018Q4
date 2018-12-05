@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Epam.StudentPractice.Lection3.Task2.Triangle
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -14,7 +14,7 @@ namespace Epam.StudentPractice.Lection3.Task2.Triangle
             Console.WriteLine("This app initializes a triangle.");
             try
             {
-                triangle = Triangle.InitRound();
+                triangle = Triangle.InitTriangle();
             }
             catch(Exception e)
             {

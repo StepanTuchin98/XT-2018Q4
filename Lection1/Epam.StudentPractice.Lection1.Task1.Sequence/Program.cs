@@ -10,17 +10,23 @@ namespace Epam.StudentPractice.Lection1.Task1.Sequence
     {
         static void Main(string[] args)
         {
-            int n;
             Console.WriteLine("This app will show you a sequence.");
-
-            do
+            Console.Write("Enter the number of the digits (positive number)");
+            if (int.TryParse(Console.ReadLine(), out int n))
             {
-                Console.Write("Enter the number of the digits (positive number)");
-                int.TryParse(Console.ReadLine(), out n);
+                if (n > 0)
+                {
+                    GetSequence(n);
+                }
+                else
+                {
+                    Console.WriteLine("Enter a number above 0 next time!");
+                }
             }
-            while (n < 1);
-
-            GetSequence(n);
+            else
+            {
+                Console.WriteLine("Enter a number next time!");
+            }
         }
 
         public static void GetSequence(int n)
@@ -40,5 +46,4 @@ namespace Epam.StudentPractice.Lection1.Task1.Sequence
             return rs;*/
         }
     }
-
 }

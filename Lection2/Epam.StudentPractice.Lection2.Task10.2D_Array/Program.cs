@@ -23,9 +23,9 @@ namespace Epam.StudentPractice.Lection2.Task10._2D_Array
         {
             double[,] tmp = new double[Length, Length];
             Random r = new Random();
-            for (int i = 0; i < Length; i++)
+            for (int i = 0; i < tmp.GetLength(0); i++)
             {
-                for (int j = 0; j < Length; j++)
+                for (int j = 0; j < tmp.GetLength(1); j++)
                 {
                     tmp[i, j] = r.Next(100);
                 }

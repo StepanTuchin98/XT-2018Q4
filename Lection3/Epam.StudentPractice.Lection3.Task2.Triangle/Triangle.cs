@@ -125,7 +125,8 @@ namespace Epam.StudentPractice.Lection3.Task2.Triangle
         public double HalfPerimeter => Perimeter / 2;
 
         public void Show() => Console.WriteLine($"A = {A}, B = {B}, C = {C}, Square = {Square}, Perimeter = {Perimeter}");
-        public static Triangle InitRound()
+
+        public static Triangle InitTriangle()
         {
             Triangle triangle;
             while (true)

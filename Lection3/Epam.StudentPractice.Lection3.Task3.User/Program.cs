@@ -10,6 +10,17 @@ namespace Epam.StudentPractice.Lection3.Task3.User
     {
         static void Main(string[] args)
         {
+            User user = null;
+            Console.WriteLine("This app initializes user.");
+            try
+            {
+                user = User.InitUser();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            user?.Show();
         }
     }
 }
