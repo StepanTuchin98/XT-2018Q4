@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Task2.Word_Frequency
+namespace Task2.WordFrequency
 {
     public class Program
     {
