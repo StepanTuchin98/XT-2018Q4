@@ -40,7 +40,8 @@ namespace Task1.Lost
             while (people.Count > 1)
             {
                 it = it % people.Count;
-                people.RemoveAt(it++);
+                people.RemoveAt(it);
+                it++;
             }
         }
     }
