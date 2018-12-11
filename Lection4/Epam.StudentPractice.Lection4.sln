@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.WordFrequency", "Task
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3.DynamicArray", "Task3.DynamicArray\Task3.DynamicArray.csproj", "{B8CC12D6-483A-40A3-98F7-E2D5EB5193C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.DynamicArrayHardcoremode", "Task4.DynamicArrayHardcoremode\Task4.DynamicArrayHardcoremode.csproj", "{566C60EF-A047-4170-8674-18A95CD82499}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B8CC12D6-483A-40A3-98F7-E2D5EB5193C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8CC12D6-483A-40A3-98F7-E2D5EB5193C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8CC12D6-483A-40A3-98F7-E2D5EB5193C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{566C60EF-A047-4170-8674-18A95CD82499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566C60EF-A047-4170-8674-18A95CD82499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566C60EF-A047-4170-8674-18A95CD82499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566C60EF-A047-4170-8674-18A95CD82499}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

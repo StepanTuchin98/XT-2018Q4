@@ -7,59 +7,79 @@ using System.Threading.Tasks;
 
 namespace Task3.Dynamic_Array
 {
-    public class DynamicArray<T> : IEnumerable, IEnumerable<T>
+    public class DynamicArray<T> : IEnumerable<T>
     {
-        #region fields
 
-        private const int startCapacity = 8;
-        public T[] Array { get; set; }
-        public int Capacity { get; protected set; }
-        public int Length { get; protected set; }
-
-        #endregion fields
+        private const int StartCapacity = 8;
 
         #region ctors
         public DynamicArray()
         {
-            this.Array = new T[startCapacity];
+            this.Array = new T[StartCapacity];
             this.Length = 0;
-            this.Capacity = startCapacity;
+            this.Capacity = StartCapacity;
         }
 
-        public DynamicArray(int Capacity)
+        public DynamicArray(int capacity)
         {
-            this.Array = new T[Capacity];
+            this.Array = new T[capacity];
             this.Length = 0;
-            this.Capacity = Capacity;
+            this.Capacity = capacity;
         }
 
         public DynamicArray(IEnumerable<T> mas, int length)
         {
-            
             this.Length = 0;
             this.Capacity = 2 * length;
-            this.Array = new T[Capacity];
+            this.Array = new T[this.Capacity];
             foreach (var item in mas)
             {
-                Add(item);
+                this.Add(item);
             }
-            
         }
-
         #endregion ctors
+
+        #region fields
+        public T[] Array { get; set; }
+
+        public int Capacity { get; protected set; }
+
+        public int Length { get; protected set; }
+
+        public T this[int index]
+        {
+            get
+            {
+                if (!this.IsCorrect(index))
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+
+                return this.Array[index];
+            }
+
+            set
+            {
+                if (!this.IsCorrect(index))
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+
+                this.Array[index] = value;
+            }
+        }
+        #endregion fields
 
         #region methods
         public void Add(T item)
         {
-            if(this.Capacity - this.Length == 0)
+            if (this.Capacity == this.Length)
             {
-                Allocate();
+                this.Allocate();
             }
-            else
-            {
-                this.Array[this.Length] = item;
-                this.Length++;
-            }
+
+            this.Array[this.Length] = item;
+            this.Length++;
         }
 
         public void AddCol(IEnumerable<T> col)
@@ -74,18 +94,18 @@ namespace Task3.Dynamic_Array
         {
             var tmp = this.Array;
             this.Capacity *= 2;
-            this.Array = new T[Capacity];
+            this.Array = new T[this.Capacity];
             this.Length = 0;
-            AddCol(tmp);
+            this.AddCol(tmp);
         }
 
         public void Allocate(int fullLenght)
         {
             var tmp = this.Array;
             this.Capacity = fullLenght;
-            this.Array = new T[Capacity];
+            this.Array = new T[this.Capacity];
             this.Length = 0;
-            AddCol(tmp);
+            this.AddCol(tmp);
         }
 
         public IEnumerator<T> GetEnumerator()
@@ -103,13 +123,12 @@ namespace Task3.Dynamic_Array
 
         public bool Remove(int index)
         {
-            if(IsCorrect(index))
+            if (!this.IsCorrect(index))
             {
                 return false;
             }
-            else if(index == this.Length)
+            else if (index == this.Length)
             {
-                
                 this.Length--;
                 return true;
             }
@@ -119,26 +138,22 @@ namespace Task3.Dynamic_Array
                 {
                     this.Array[i] = this.Array[i + 1];
                 }
+
                 this.Length--;
                 return true;
             }
         }
-        
+
         public void AddRange(IEnumerable<T> collection, int length)
         {
             int fullLenght = this.Length + length;
             if (fullLenght > this.Capacity)
             {
-                Allocate(fullLenght);
-                AddCol(collection);
+                this.Allocate(fullLenght);
             }
-            else
-            {
-                AddCol(collection);
-            }
+
+            this.AddCol(collection);
         }
-
-
       
         public bool IsCorrect(int index)
         {
@@ -146,9 +161,33 @@ namespace Task3.Dynamic_Array
             {
                 return false;
             }
+
             return true;
         }
 
-            #endregion methods
+        public bool Insert(T item, int index)
+        {
+            if (!this.IsCorrect(index))
+            {
+                return false;
+            }
+
+            int fullLenght = this.Length + 1;
+            if (fullLenght > this.Capacity)
+            {
+                this.Allocate();
+            }
+
+            for (var i = this.Length - 1; i >= index; i--)
+            {
+                this.Array[i + 1] = this.Array[i];
+            }
+
+            this.Array[index] = item;
+            this.Length++;
+            return true;
         }
+
+        #endregion methods
+    }
 }
