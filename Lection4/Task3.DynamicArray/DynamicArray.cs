@@ -68,6 +68,7 @@ namespace Task3.Dynamic_Array
                 this.Array[index] = value;
             }
         }
+
         #endregion fields
 
         #region methods
