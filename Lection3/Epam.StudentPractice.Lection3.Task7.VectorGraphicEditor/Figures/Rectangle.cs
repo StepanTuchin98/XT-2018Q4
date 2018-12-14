@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
 {
-    class Rectangle : IFigure
+    class Rectangle : Figure
     {
         internal Point RightDownPoint { get; set; }
         internal Point LeftUpPoint { get; set; }
@@ -28,7 +28,7 @@ namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
             this.LeftUpPoint = new Point(leftX, leftY);
             this.RightDownPoint = new Point(rightX, rightY);
         }
-        public void Show() => Console.WriteLine(
+        public override void Show() => Console.WriteLine(
             $"First Point = ({LeftUpPoint.X},{LeftUpPoint.Y}), " +
             $"Second Point = ({RightDownPoint.X},{LeftUpPoint.Y}), " +
             $"Third Point = ({RightDownPoint.X},{RightDownPoint.Y}), " +

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
 {
-    class Line : IFigure
+    class Line : Figure
     {
         public Point Begin { set; get; } = new Point();
         public Point End { set; get; } = new Point();
@@ -28,7 +28,7 @@ namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
             this.End = new Point(endX, endY);
         }
 
-        public void Show() => Console.WriteLine($"Begin x = {Begin.X}, Begin y = {Begin.X}, End x = {End.X}, End y = {End.X}{Environment.NewLine}");
+        public override void Show() => Console.WriteLine($"Begin x = {Begin.X}, Begin y = {Begin.X}, End x = {End.X}, End y = {End.X}{Environment.NewLine}");
 
         public static Line InitLine()
         {

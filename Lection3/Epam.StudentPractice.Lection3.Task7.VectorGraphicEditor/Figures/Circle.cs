@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
 {
-    class Circle : IFigure
+    class Circle : Figure
     {
         double r;
         internal Point Center { get; set; }
@@ -43,7 +43,10 @@ namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
             Radius = radius;
         }
 
-        public virtual void Show() => Console.WriteLine($"Center  = ({Center.X},{Center.Y}){Environment.NewLine}Radius = {Radius}{Environment.NewLine}");
+        public override void Show()
+        {
+            Console.WriteLine($"Center  = ({Center.X},{Center.Y}){Environment.NewLine}Radius = {Radius}{Environment.NewLine}");
+        }
 
         public static Circle InitCircleOrRound()
         {

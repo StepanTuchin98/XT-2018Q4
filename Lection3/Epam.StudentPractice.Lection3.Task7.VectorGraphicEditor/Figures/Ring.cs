@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
 {
-    class Ring : IFigure
+    class Ring : Figure
     {
         private Round inner;
         private Round outer;
@@ -58,7 +58,7 @@ namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
 
         public double Square() => Outer.Square() - Inner.Square();
 
-        public void Show() => Console.WriteLine($"Inner = {Inner.Radius}, X = {Inner.Center.X}, Y = {Inner.Center.Y}, Outer = {Outer.Radius}, X = {Outer.Center.X}, Y = {Outer.Center.Y}, Square = {Square()}{Environment.NewLine}");
+        public override void Show() => Console.WriteLine($"Inner = {Inner.Radius}, X = {Inner.Center.X}, Y = {Inner.Center.Y}, Outer = {Outer.Radius}, X = {Outer.Center.X}, Y = {Outer.Center.Y}, Square = {Square()}{Environment.NewLine}");
 
         public static Ring InitRing()
         {

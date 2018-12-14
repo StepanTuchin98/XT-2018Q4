@@ -13,7 +13,7 @@ namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
             Console.WriteLine("This app is vector graphics editor");
             string operation;
             int cmd;
-            IFigure figure = null;
+            Figure figure = null;
             do
             {
                 Console.WriteLine("You can paint such figures:");

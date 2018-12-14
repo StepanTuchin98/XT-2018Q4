@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Epam.StudentPractice.Lection3.Task7.VectorGraphicEditor
 {
-    class Round : Circle, IFigure
+    class Round : Circle
     {
         public Round(Point center, double radius) : base(center, radius)
         {
