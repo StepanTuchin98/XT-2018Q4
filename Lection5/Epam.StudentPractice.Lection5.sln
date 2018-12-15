@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1.CustomSort", "Task1.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2.CustomSortDemo", "Task2.CustomSortDemo\Task2.CustomSortDemo.csproj", "{63548222-AD06-4DA1-BDF5-A82EC49D8EFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4.NumberArraySum", "Task4.NumberArraySum\Task4.NumberArraySum.csproj", "{7AE7111A-9BD5-4B98-AD16-618878DA3A0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{63548222-AD06-4DA1-BDF5-A82EC49D8EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63548222-AD06-4DA1-BDF5-A82EC49D8EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63548222-AD06-4DA1-BDF5-A82EC49D8EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE7111A-9BD5-4B98-AD16-618878DA3A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE7111A-9BD5-4B98-AD16-618878DA3A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE7111A-9BD5-4B98-AD16-618878DA3A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE7111A-9BD5-4B98-AD16-618878DA3A0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
