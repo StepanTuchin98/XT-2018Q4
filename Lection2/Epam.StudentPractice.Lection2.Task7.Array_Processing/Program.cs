@@ -24,7 +24,7 @@ namespace Epam.StudentPractice.Lection2.Task7.Array_Processing
         {
             int[] tmp = new int[Length];
             Random r = new Random();
-            for (int i = 0; i < Length; i++)
+            for (int i = 0; i < tmp.Length; i++)
             {
                 tmp[i] = r.Next(100);
             }

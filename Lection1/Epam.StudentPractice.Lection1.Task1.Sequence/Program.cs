@@ -37,13 +37,6 @@ namespace Epam.StudentPractice.Lection1.Task1.Sequence
                 Console.Write($"{i}, ");
             }
             Console.WriteLine(n);
-            /* 
-            List<int> t = new List<int>(); 
-            for (int i = 1; i <= n; i++) 
-            t.Add(i); 
-
-            String rs = String.Join(",", t.ToArray()); 
-            return rs;*/
         }
     }
 }

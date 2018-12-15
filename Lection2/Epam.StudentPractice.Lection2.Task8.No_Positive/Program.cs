@@ -23,11 +23,11 @@ namespace Epam.StudentPractice.Lection2.Task8.No_Positive
         {
             double[,,] tmp = new double[Length, Length, Length];
             Random r = new Random();
-            for (int i = 0; i < Length; i++)
+            for (int i = 0; i < tmp.GetLength(0); i++)
             {
-                for (int j = 0; j < Length; j++)
+                for (int j = 0; j < tmp.GetLength(1); j++)
                 {
-                    for (int k = 0; k < Length; k++)
+                    for (int k = 0; k < tmp.GetLength(2); k++)
                     {
                         tmp[i, j, k] = r.Next(-100,100);
                     }
@@ -38,11 +38,11 @@ namespace Epam.StudentPractice.Lection2.Task8.No_Positive
 
         public static void SetNoPositive(ref double[,,] mas)
         {
-            for (int i = 0; i < Length; i++)
+            for (int i = 0; i < mas.GetLength(0); i++)
             {
-                for (int j = 0; j < Length; j++)
+                for (int j = 0; j < mas.GetLength(1); j++)
                 {
-                    for (int k = 0; k < Length; k++)
+                    for (int k = 0; k < mas.GetLength(2); k++)
                     {
 
                         if (mas[i, j, k] > 0)

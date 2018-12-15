@@ -37,9 +37,9 @@ namespace Epam.StudentPractice.Lection2.Task10._2D_Array
         {
             double sum = 0;
 
-            for (int i = 0; i < Length; i++)
+            for (int i = 0; i < mas.GetLength(0); i++)
             {
-                for (int j = 0; j < Length; j++)
+                for (int j = 0; j < mas.GetLength(1); j++)
                 {
                     if ((i + j)  % 2 == 0)
                     {

@@ -28,14 +28,12 @@ namespace Epam.StudentPractice.Lection2.Task11.AverageStringLength
                         isLetter = true;
                     }
                 }
-                else
+                else if (isLetter)
                 {
-                    if (isLetter)
-                    {
-                        amount++;
-                        sum += i - firstPos;
-                        isLetter = false;
-                    }
+
+                    amount++;
+                    sum += i - firstPos;
+                    isLetter = false;
                 }
             }
           
